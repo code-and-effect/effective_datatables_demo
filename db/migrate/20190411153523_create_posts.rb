@@ -5,7 +5,12 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       
       t.string :title
       t.text :description
+
       t.boolean :draft
+      t.datetime :published_at
+
+      t.integer :score
+
       t.datetime :created_at
       t.datetime :updated_at
     end

@@ -2,7 +2,6 @@ class User < ApplicationRecord
   has_many :posts
 
   # Attributes
-  
   # first_name    :string
   # last_name     :string
   # city          :string
