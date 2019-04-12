@@ -8,13 +8,14 @@ Rails 5.2, jQuery 3 and Twitter Bootstrap 4.
 
 Click here for the [Live Demo](https://effective-datatables-demo.herokuapp.com/).
 
-and see [effective_datatables](https://github.com/code-and-effect/effective_datatables) for the gem itself.
+Visit [effective_datatables](https://github.com/code-and-effect/effective_datatables) for the gem itself.
 
 ## Setup yourself
 
 ```ruby
 git clone git@github.com:code-and-effect/effective_datatables_demo.git
-
+cd effective_datatables_demo
+bundle
 rails db:create db:migrate db:seed
 rails server
 ```
