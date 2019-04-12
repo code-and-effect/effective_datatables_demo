@@ -10,8 +10,6 @@ gem 'pg'
 
 gem 'haml-rails'
 gem 'sass-rails'
-gem 'coffee-rails'
-gem 'uglifier'
 gem 'faker'
 
 gem 'bootstrap'

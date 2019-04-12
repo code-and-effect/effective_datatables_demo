@@ -12,12 +12,12 @@ class Post < ApplicationRecord
   #
   # timestamps
 
+  scope :published, -> { where(draft: false) }
+  scope :unpublished, -> { where(draft: true) }
+
   def to_s
     title
   end
-
-  scope :published, -> { where(draft: false) }
-  scope :unpublished, -> { where(draft: true) }
 
   def publish!
     update!(draft: false, published_at: Time.zone.now)
