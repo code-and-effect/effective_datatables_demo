@@ -2,7 +2,7 @@
 
 This is a skeleton rails website that shows off the [effective_datatables](https://github.com/code-and-effect/effective_datatables) gem.
 
-Rails 5.2, jQuery and Twitter Bootstrap 4.
+Rails 5.2, jQuery 3 and Twitter Bootstrap 4.
 
 ## Getting Started
 
