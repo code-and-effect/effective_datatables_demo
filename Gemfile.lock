@@ -1,7 +1,7 @@
 PATH
   remote: ../effective_datatables
   specs:
-    effective_datatables (4.4.2)
+    effective_datatables (4.4.3)
       coffee-rails
       effective_bootstrap
       effective_resources
@@ -72,7 +72,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
-    effective_bootstrap (0.4.1)
+    effective_bootstrap (0.4.2)
       bootstrap (>= 4.0.0)
       coffee-rails
       inline_svg
