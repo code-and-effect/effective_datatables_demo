@@ -45,8 +45,6 @@ GEM
     arel (9.0.0)
     autoprefixer-rails (9.5.1)
       execjs
-    bootsnap (1.4.3)
-      msgpack (~> 1.0)
     bootstrap (4.3.1)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 1.14.3, < 2)
@@ -76,9 +74,6 @@ GEM
       effective_resources
       rails (>= 3.2.0)
       sass
-    effective_developer (0.4.3)
-      effective_resources
-      rails (>= 3.2.0)
     effective_resources (1.2.10)
       rails (>= 4.0.0)
     erubi (1.8.0)
@@ -128,7 +123,6 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
-    msgpack (1.2.9)
     nio4r (2.3.1)
     nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
@@ -218,10 +212,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootsnap
   bootstrap
   effective_datatables (>= 4)
-  effective_developer
   faker
   haml-rails
   jquery-rails
