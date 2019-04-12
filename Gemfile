@@ -3,10 +3,6 @@ ruby '2.5.0'
 
 gem 'rails'
 
-gem 'puma'
-gem 'sqlite3'
-gem 'pg'
-
 gem 'haml-rails'
 gem 'sass-rails'
 gem 'faker'
@@ -16,6 +12,12 @@ gem 'jquery-rails'  # This is jQuery 3
 gem 'effective_datatables', '>= 4'
 
 group :development do
-  gem 'pry-byebug'
   gem 'listen'
+  gem 'pry-byebug'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'puma'
+  gem 'pg'
 end

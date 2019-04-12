@@ -2,77 +2,34 @@
 
 This is a skeleton rails website that shows off the [effective_datatables](https://github.com/code-and-effect/effective_datatables) gem.
 
-Rails 5.2.3
+Rails 5.2, jQuery and Twitter Bootstrap 4.
 
-Also installed are jQuery and Twitter Bootstrap 4.
+## Getting Started
 
-### How I built this site
+Click here for the [Live Demo](https://effective-datatables-demo.herokuapp.com).
 
-```
-rails new effective_datatables_demo
-```
+## Setup yourself
 
-In `.ruby-version` changed to `2.5.0`
+```ruby
+git clone git@github.com:code-and-effect/effective_datatables_demo.git
 
-In Gemfile:
-
-```
-ruby '2.5.0'
-
-gem 'bootstrap'
-gem 'jquery-rails'
-gem 'haml-rails'
-gem 'effective_datatables'
-
-group :development do
-  gem 'effective_developer' # Just or scaffolds
-end
-
+rails db:create db:migrate db:seed
+rails server
 ```
 
-Run installer:
+Happy tabling!
 
-```
-rails generate effective_datatables:install
-```
+## License
 
-In application.js:
+MIT License.  Copyright [Code and Effect Inc.](http://www.codeandeffect.com/)
 
-```
-//= require jquery3
-//= require bootstrap
-//= require effective_bootstrap
-//= require effective_datatables
-```
+## Contributing
 
-In application.scss:
-
-```
-@import 'bootstrap';
-@import 'effective_datatables';
-```
-
-Create user.rb and post.rb models.
-
-```
-rails generate migration create_users first_name:string last_name:string city:string created_at:datetime updated_at:datetime
-rails generate migration create_posts user_id:integer title:string description:text draft:boolean created_at:datetime updated_at:datetime
-
-rake db:migrate
-```
-
-In routes.rb:
-
-```
-resources :users, only: :index
-resources :posts, only: :index
-
-root to: 'posts#index'
-```
-
-
-
-
-
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Bonus points for test coverage
+6. Create new Pull Request
 
 
