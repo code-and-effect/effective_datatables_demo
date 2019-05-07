@@ -9,7 +9,8 @@ gem 'faker'
 
 gem 'bootstrap'     # This is Twitter Bootstrap 4
 gem 'jquery-rails'  # This is jQuery 3
-gem 'effective_datatables', '>= 4'
+gem 'effective_datatables'
+gem 'effective_bootstrap'
 
 group :development do
   gem 'listen'
