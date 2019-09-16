@@ -68,7 +68,7 @@ GEM
       jquery-rails
       rails (>= 4.0.0)
       sass
-    effective_datatables (4.7.14)
+    effective_datatables (4.7.15)
       coffee-rails
       effective_bootstrap
       effective_resources
@@ -223,9 +223,6 @@ DEPENDENCIES
   rails
   sass-rails
   sqlite3
-
-RUBY VERSION
-   ruby 2.5.0p0
 
 BUNDLED WITH
    1.17.3
