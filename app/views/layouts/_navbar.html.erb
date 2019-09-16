@@ -12,6 +12,9 @@
       <li class='nav-item <%= 'active' if request.path.start_with?(posts_path) %>'>
         <%= link_to 'Advanced', posts_path, class: 'nav-link' %>
       </li>
+      <li class='nav-item <%= 'active' if request.path.start_with?(charts_path) %>'>
+        <%= link_to 'Charts', charts_path, class: 'nav-link' %>
+      </li>
       <li class='nav-item'>
         <%= link_to 'Github', 'https://github.com/code-and-effect/effective_datatables_demo', class: 'nav-link' %>
       </li>
