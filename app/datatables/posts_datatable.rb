@@ -23,7 +23,7 @@ class PostsDatatable < Effective::Datatable
     end
 
     col :draft
-    
+
     col :title
     col :score
     col :description
