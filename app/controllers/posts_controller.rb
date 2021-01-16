@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  include Effective::CrudController
 
   def index
     @datatable = PostsDatatable.new
@@ -36,5 +37,9 @@ class PostsController < ApplicationController
       render json: { status: 500, message: 'An error occured while unpublishing a post.' }
     end
   end
-  
+
+  def permitted_params
+    params.require(:post).permit!
+  end
+
 end

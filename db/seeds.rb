@@ -6,10 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.delete_all
+Post.delete_all
+Thing.delete_all
+
 10.times do
   User.create!(
-    first_name: Faker::Name.first_name, 
-    last_name: Faker::Name.last_name, 
+    first_name: Faker::Name.first_name,
+    last_name: Faker::Name.last_name,
     city: Faker::Address.city
   )
 end
@@ -21,11 +25,20 @@ users = User.all.to_a
   published_at = Time.zone.now.advance(days: -1.upto(300).to_a.sample, hours: 10.upto(20).to_a.sample) if draft
 
   Post.create!(
-    title: Faker::Quote.famous_last_words, 
-    description: Faker::Quote.matz, 
+    title: Faker::Quote.famous_last_words,
+    description: Faker::Quote.matz,
     score: 1.upto(100).to_a.sample,
-    draft: draft, 
+    draft: draft,
     published_at: published_at,
     user: users.sample,
+  )
+end
+
+10.times do
+  Thing.create!(
+    title: Faker::Quote.famous_last_words,
+    description: Faker::Quote.matz,
+    approved: [true, false].sample,
+    user: users.sample
   )
 end

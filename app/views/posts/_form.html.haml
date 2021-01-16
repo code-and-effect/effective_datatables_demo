@@ -1,5 +1,7 @@
-%p I can't have internet travelers actually updating this post content.
-
-%p This would normally be a form tho :)
-
-%p= link_to 'Continue', posts_path, class: 'btn btn-primary'
+= effective_form_with(model: post) do |f|
+  = f.text_field :title
+  = f.text_area :description
+  = f.check_box :draft
+  = f.date_field :published_at
+  = f.number_field :score
+  = f.save

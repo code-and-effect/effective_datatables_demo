@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_11_153523) do
+ActiveRecord::Schema.define(version: 2021_01_16_191512) do
 
   create_table "posts", force: :cascade do |t|
     t.integer "user_id"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 2019_04_11_153523) do
     t.boolean "draft"
     t.datetime "published_at"
     t.integer "score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "things", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "title"
+    t.text "description"
+    t.boolean "approved", default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

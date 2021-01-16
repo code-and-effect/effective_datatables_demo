@@ -8,6 +8,8 @@ class User < ApplicationRecord
   #
   # timestamps
 
+  scope :sorted, -> { order(:first_name) }
+
   def to_s
     [first_name, last_name].compact.join(' ')
   end
