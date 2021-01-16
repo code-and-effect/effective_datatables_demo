@@ -61,20 +61,23 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
-    effective_bootstrap (0.6.16)
+    effective_bootstrap (0.9.10)
       bootstrap (>= 4.0.0)
       coffee-rails
       inline_svg
       jquery-rails
       rails (>= 4.0.0)
       sass
-    effective_datatables (4.7.20)
+    effective_datatables (4.8.14)
       coffee-rails
       effective_bootstrap
       effective_resources
       rails (>= 3.2.0)
       sass
-    effective_resources (1.4.4)
+    effective_developer (0.5.4)
+      effective_resources
+      rails (>= 3.2.0)
+    effective_resources (1.7.1)
       rails (>= 4.0.0)
     erubi (1.8.0)
     erubis (2.7.0)
@@ -100,7 +103,7 @@ GEM
       ruby_parser (~> 3.5)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
-    inline_svg (1.7.0)
+    inline_svg (1.7.2)
       activesupport (>= 3.0)
       nokogiri (>= 1.6)
     jquery-rails (4.3.5)
@@ -213,6 +216,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap
   effective_datatables
+  effective_developer
   faker
   haml-rails
   jquery-rails
