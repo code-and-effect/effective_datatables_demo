@@ -74,9 +74,6 @@ GEM
       effective_resources
       rails (>= 3.2.0)
       sass
-    effective_developer (0.5.4)
-      effective_resources
-      rails (>= 3.2.0)
     effective_resources (1.7.1)
       rails (>= 4.0.0)
     erubi (1.8.0)
@@ -216,7 +213,6 @@ PLATFORMS
 DEPENDENCIES
   bootstrap
   effective_datatables
-  effective_developer
   faker
   haml-rails
   jquery-rails
@@ -227,6 +223,9 @@ DEPENDENCIES
   rails
   sass-rails
   sqlite3
+
+RUBY VERSION
+   ruby 2.6.6p146
 
 BUNDLED WITH
    1.17.3
