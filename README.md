@@ -2,7 +2,7 @@
 
 This is a skeleton rails website that shows off the [effective_datatables](https://github.com/code-and-effect/effective_datatables) gem.
 
-Rails 5.2, jQuery 3 and Twitter Bootstrap 4.
+Rails 7.0.2.3, jQuery 3 and Twitter Bootstrap 4.
 
 ## Getting Started
 
@@ -34,5 +34,3 @@ MIT License.  Copyright [Code and Effect Inc.](http://www.codeandeffect.com/)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Bonus points for test coverage
 6. Create new Pull Request
-
-
