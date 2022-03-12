@@ -1,3 +1,9 @@
+PATH
+  remote: ../effective_resources
+  specs:
+    effective_resources (1.15.1)
+      rails (>= 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -99,8 +105,6 @@ GEM
       effective_resources
       rails (>= 3.2.0)
       sassc
-    effective_resources (1.15.1)
-      rails (>= 4.0.0)
     erubi (1.10.0)
     execjs (2.8.1)
     faker (2.20.0)
@@ -233,6 +237,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap
   effective_datatables
+  effective_resources!
   faker
   haml
   jquery-rails
