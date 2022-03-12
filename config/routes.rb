@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  acts_as_archived
-
   resources :users, only: :index
   resources :charts, only: :index
 
@@ -11,7 +9,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :things, concerns: :acts_as_archived do
+  resources :things do
     post :approve, on: :member
     post :reject, on: :member
   end
