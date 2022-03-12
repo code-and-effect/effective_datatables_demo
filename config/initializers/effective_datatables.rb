@@ -40,4 +40,5 @@ EffectiveDatatables.setup do |config|
   config.cookie_domain = :all         # Should usually be :all
   config.cookie_tld_length = nil      # Leave nil to autodetect, or set to probably 2
 
+  config.download = true
 end
